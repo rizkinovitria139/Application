@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity
                 Intent intent = new Intent(MainActivity.this, SaveActivity.class); //intent button fab
                 intent.putExtra(TRANSACTION_KEY, new Transaction());
                 startActivityForResult(intent, INSERT_REQUEST);
-                // TODO: Tambahkan event click fab di sini
             }
         });
 

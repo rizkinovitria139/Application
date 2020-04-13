@@ -14,7 +14,8 @@ public class Transaction implements Parcelable{
         CARDIGAN,
         HOODIE,
         DRESS,
-        OVERALL
+        OVERALL,
+        EMPTY
     }
 
     private String nama;
