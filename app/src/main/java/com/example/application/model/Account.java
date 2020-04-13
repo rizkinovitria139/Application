@@ -8,6 +8,7 @@ public class Account {
     private int balance;
     private List<Transaction> transactions;
 
+
     public Account(String name) {
         this.name = name;
         this.balance = 0;

@@ -6,6 +6,10 @@ import android.os.Parcelable;
 import java.lang.reflect.Type;
 
 public class Transaction implements Parcelable{
+    public Transaction() {
+
+    }
+
     public enum Type{
         CARDIGAN,
         HOODIE,
