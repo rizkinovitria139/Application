@@ -6,6 +6,10 @@ import java.util.List;
 public class Account {
     private String name;
     private int balance;
+    int cardigan = 100000;
+    int hoodie = 75000;
+    int dress = 175000;
+    int overall = 125000;
     private List<Transaction> transactions;
 
 
@@ -33,13 +37,13 @@ public class Account {
 
     public void addTransaction(Transaction transaction) {
         if (transaction.getType() == Transaction.Type.CARDIGAN) {
-            balance += 100000;
+            balance += cardigan;
         } else if(transaction.getType() == Transaction.Type.HOODIE){
-            balance += 75000;
+            balance += hoodie;
         }else if(transaction.getType() == Transaction.Type.DRESS){
-            balance += 175000;
+            balance += dress;
         }else{
-            balance += 12500;
+            balance += overall;
         }
         this.transactions.add(transaction);
     }
@@ -47,13 +51,13 @@ public class Account {
     public void removeTransaction(int index) {
         Transaction transaction = transactions.get(index);
         if (transaction.getType() == Transaction.Type.CARDIGAN) {
-            balance -= 100000;
+            balance -= cardigan;
         } else if(transaction.getType() == Transaction.Type.HOODIE){
-            balance -= 75000;
+            balance -= hoodie;
         }else if(transaction.getType() == Transaction.Type.DRESS){
-            balance -= 175000;
+            balance -= dress;
         }else{
-            balance -= 12500;
+            balance -= overall;
         }
         this.transactions.remove(transaction);
     }
@@ -63,13 +67,13 @@ public class Account {
         this.balance = 0;
         for (Transaction t : transactions) {
             if (transaction.getType() == Transaction.Type.CARDIGAN) {
-                balance += 100000;
+                balance += cardigan;
             } else if(transaction.getType() == Transaction.Type.HOODIE){
-                balance += 75000;
+                balance += hoodie;
             }else if(transaction.getType() == Transaction.Type.DRESS){
-                balance += 175000;
+                balance += dress;
             }else{
-                balance += 12500;
+                balance += overall;
             }
         }
     }
