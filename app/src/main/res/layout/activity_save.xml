@@ -64,27 +64,27 @@
         app:layout_constraintVertical_bias="0.208">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/cardigan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cardigan" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/hoodie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Hodie" />
+            android:text="Hoodie" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/dress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:text="Dress" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/overall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -104,7 +104,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/namaInput"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -117,7 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/rgroup" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSubmit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -125,6 +125,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/namaInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
