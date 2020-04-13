@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity
                 int index = viewHolder.getAdapterPosition();
                 account.removeTransaction(index);
                 adapter.notifyDataSetChanged();
-                balanceText.setText(String.valueOf(account.getBalance()));
+                balanceText.setText(formatRupiah.format(account.getBalance()));
             }
         };
         ItemTouchHelper mItemTouchHelper = new ItemTouchHelper(simpleItemTouchCallBack);
